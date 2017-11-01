@@ -1,0 +1,80 @@
+body {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: PT Sans;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;    
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.page-header {
+    box-sizing: border-box;
+    height: 70px;
+    background-color: #000000;
+    color: #ffffff;
+    vertical-align: middle;
+    
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 30px;
+}
+
+.main-menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.page-header a {
+    display: inline-block;
+    position: relative;
+    line-height: 70px;;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: -4px;;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.page-header a:hover {
+    background-color: #242424;
+}
+
+.user-block {
+    display: inline-block;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.user-block a::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 16px;
+    margin-right: 10px;
+    margin-top: -4px;
+    background: url(/img/icon-login.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    opacity: 0.3;
+}
+
+.user-block a:hover::before {
+    opacity: 1;
+}
+
+.main-menu {
+    float: left;
+}
