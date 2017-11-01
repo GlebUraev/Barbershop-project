@@ -1,7 +1,12 @@
+/*
+1. Header
+2. 
+*/
+
 body {
     font-size: 14px;
     text-transform: uppercase;
-    font-family: PT Sans;
+    font-family: PT Sans Narrow;
 }
 
 .container {
@@ -14,13 +19,14 @@ body {
     display: table;
     clear: both;
 }
+
+
 .page-header {
     box-sizing: border-box;
     height: 70px;
     background-color: #000000;
     color: #ffffff;
     vertical-align: middle;
-    
 }
 
 .main-menu ul {
@@ -36,6 +42,7 @@ body {
 
 .page-header a {
     display: inline-block;
+    box-sizing: border-box;
     position: relative;
     line-height: 70px;;
     padding-left: 15px;
@@ -49,6 +56,11 @@ body {
 .page-header a:hover {
     background-color: #242424;
 }
+
+/*.main-menu-active {
+    box-sizing: border-box;
+    border-bottom: 5px solid white;
+}*/
 
 .user-block {
     display: inline-block;
@@ -77,4 +89,55 @@ body {
 
 .main-menu {
     float: left;
+}
+
+main {
+    background-image: url(/img/main-bg.png);    
+}
+
+.logo {
+    display: inline-block;
+    margin-left: 286px;
+    margin-top: 60px;
+}
+
+.features {
+    display: inline-block;
+    margin-left: 10px
+}
+
+.features-item {
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.features-title {
+    display: inline-block;    
+    margin-bottom: 75px;
+    font-size: 30px;  
+}
+
+.features-item::after {
+    position: absolute;
+    top: 35%;
+    left: 115px;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(/img/romb.png);
+    
+}
+
+.features-item p {
+    margin: 0;
+    padding: 0;
 }
