@@ -352,7 +352,7 @@ main {
 
 /* 1. Menu-hierarchy */
 
-.menu-title {
+.page-title {
     margin: 0;
     margin-bottom: 30px;
 }
@@ -388,27 +388,27 @@ main {
 
 /* 2. Marker-list */
 
-.main-content-price ul {
+.main-content ul {
     margin: 0;
     padding: 0;
     margin-left: 20px;
     list-style-image: url(/img/navigation-romb.png);
 }
 
-.main-content-price ul li {
+.main-content ul li {
     line-height: 40px;
 }
 
 /* 3. Price-list content */
 
-.main-content-price-title {
+.main-content-title {
     font-size: 48px;
     text-align: center;
     margin: 0 auto;
 }
 
-.main-content-price-title::before,
-.main-content-price-title::after {
+.main-content-title::before,
+.main-content-title::after {
     content: '';
     display: inline-block;
     margin: 0;
@@ -421,15 +421,15 @@ main {
     vertical-align: middle;
 }
 
-.main-content-price-title::before {
+.main-content-title::before {
     float: left;
 }
 
-.main-content-price-title::after {
+.main-content-title::after {
     float: right;
 }
 
-.main-content-price-subtitle {
+.main-content-subtitle {
     margin: 0;
     font-size: 24px;
     line-height: 30px;
@@ -453,7 +453,7 @@ main {
     width: 460px;
 }
 
-.main-content-price p {
+.main-content p {
     display: inline-block;
     width: 385px;
     margin: 0;
