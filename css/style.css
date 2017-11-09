@@ -10,6 +10,7 @@ SECONDARY-PAGE
 1. Menu-hierarchy
 2. Marker-list
 3. Price-list content
+4. Shop-item
 */
 
 body {
@@ -57,14 +58,15 @@ input {
 }
 
 .main-menu ul {
+    display: inline-block;
+    text-align: left;
     margin: 0;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 30px;    
 }
 
 .main-menu li {
     display: inline-block;
-    list-style: none;
 }
 
 .page-header a {
@@ -389,10 +391,9 @@ main {
 /* 2. Marker-list */
 
 .main-content ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
     list-style-image: url(/img/navigation-romb.png);
+    margin-left: 0;
+    padding-left: 15px;
 }
 
 .main-content ul li {
@@ -430,6 +431,7 @@ main {
 }
 
 .main-content-subtitle {
+    display: inline-block;
     margin: 0;
     font-size: 24px;
     line-height: 30px;
@@ -478,4 +480,65 @@ main {
 
 .price-table td:nth-child(2) {
     text-align: center;
+}
+
+/* 4. Shop-item */
+
+.shop-item {
+    height: 900px;
+}
+
+.shop-item-gallery {
+    width: 500px;
+    margin-right: 90px;
+    float: left;
+}
+
+.item-photo-big {
+    width: 460px;    
+}
+
+.item-photo-small {
+    width: 140px;
+    margin-right: 17px;
+}
+
+
+
+
+
+.shop-item-avaliable {
+    display: inline-block;
+}
+
+.shop-item-number {
+    display: inline-block;
+    float: right;
+    color: #aeaeae;
+}
+
+.shop-item-description {
+    margin-top: 43px;
+    margin-bottom: 43px;
+    line-height: 24px;
+}
+
+.shop-item-price {
+    display: inline-block;
+    margin-right: -3px;
+    width: 110px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #e5e5e5;
+}
+
+.btn-buy {
+    display: inline-block;
+    width: 80px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.shop-item li {
+     margin-left: 590px;
 }
