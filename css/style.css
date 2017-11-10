@@ -11,6 +11,7 @@ SECONDARY-PAGE
 2. Marker-list
 3. Price-list content
 4. Shop-item
+5. Shop
 */
 
 body {
@@ -535,6 +536,70 @@ main {
     color: #ffffff;
 }
 
-.shop-item li {
-     margin-left: 590px;
+/* 5. Shop */
+
+.shop {
+    height: 915px;
 }
+
+.shop-item li {
+    margin-left: 590px;
+}
+
+.shop-filter {
+    display: inline-block;
+    float: left;
+    width: 240px;
+}
+
+.shop-filter-title:nth-child(2n) {
+    margin-top: 40px;
+}
+
+.shop-filter-title {
+    font-size: 24px;
+    margin-bottom: 40px;    
+}
+
+.shop-filter label {
+    display: inline-block;
+    position: relative;
+    width: 125px;
+    line-height: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.shop-filter input {
+    display: none;
+}
+
+.shop-filter input[type="checkbox"] + label::before,
+.shop-filter input[type="radio"] + label::before
+{
+    display: inline-block;
+    content: '';    
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    background-image: url(/img/chk-radio-sprite.png);
+    background-repeat: no-repeat;
+}
+
+.shop-filter input[type="checkbox"] + label::before {
+    background-position: -5px -5px;
+}
+
+.shop-filter input[type="radio"] + label::before {
+    background-position: -65px -5px;
+}
+
+.shop-filter input[type="checkbox"]:checked + label::before {
+    background-position: -35px -5px;
+}
+
+.shop-filter input[type="radio"]:checked + label::before {
+    background-position: -95px -5px;
+}
+
