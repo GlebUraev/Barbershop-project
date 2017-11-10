@@ -532,6 +532,7 @@ main {
 .btn-buy {
     display: inline-block;
     width: 80px;
+    margin: 0;
     background-color: #000000;
     color: #ffffff;
 }
@@ -548,12 +549,11 @@ main {
 
 .shop-filter {
     display: inline-block;
-    float: left;
-    width: 240px;
+    float: left;    
 }
 
 .shop-filter-title:nth-child(2n) {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .shop-filter-title {
@@ -565,9 +565,9 @@ main {
     display: inline-block;
     position: relative;
     width: 125px;
-    line-height: 20px;
-    margin-left: 25px;
-    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px
 }
 
 .shop-filter input {
@@ -581,6 +581,7 @@ main {
     content: '';    
     width: 20px;
     height: 20px;
+    margin-right: 15px;
     position: absolute;
     left: -30px;
     background-image: url(/img/chk-radio-sprite.png);
@@ -603,3 +604,79 @@ main {
     background-position: -95px -5px;
 }
 
+.shop-filter button {
+    margin-top: 30px;
+}
+
+.shop-list {
+    display: inline-block;
+    float: right;
+    width: 710px;
+}
+
+.shop-list-item {
+    display: inline-block;
+    width: 220px;
+    height: 285px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.shop-list-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.shop-list-item-photo {
+    width: 220px;
+}
+
+.shop-list-item-price {
+    display: inline-block;
+    margin-right: -3px;
+    width: 110px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #e5e5e5;
+    margin-left: 15px;
+}
+
+.shop-list-item-type {
+    text-transform: none;
+    margin-left: 20px;
+    line-height: 18px
+}
+
+.shop-list-item-title {
+    margin-left: 20px;
+    margin-bottom: 15px;
+    line-height: 18px
+}
+
+.page-number {
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+    line-height: 43px;
+    text-decoration: none; 
+    color: #ffffff;
+    background-color: #000000
+}
+
+.page-number:hover {
+    background-color: #663d15;
+}
+
+.page-active:hover {
+    background-color: #ffffff;
+}
+
+
+.page-active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.shop-list-nav {
+    margin-top: 20px;
+}
